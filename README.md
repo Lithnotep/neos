@@ -30,11 +30,13 @@ With your partner look through `start.rb` and `near_earth_objects.rb`
 
 With your Partner, identify the different responsibilities that exist in each file.
 
-- Does this adhere to SRP?
+- Does this adhere to SRP? This does not adhere to SRP as it has one method that does all the classes work.
 
-- How would you utilize encapsulation and abstraction to refactor this code?
+- How would you utilize encapsulation and abstraction to refactor this code? I am going to try and break down the current variables created from the api information and make then thier own methods as well as make the api call itself a method of its own.
 
-- What tools/strategies could you utilize to make this code adhere to SRP?
+- What tools/strategies could you utilize to make this code adhere to SRP? I am going to start by targeting all the variables that currently uses map iterators and get those into their own methods. Then I'm going to try and see if can move the api call in to its own method as well.
+
+If i have time i would rather have another class that breaks down the api instead but I am not sure if that is best practice.
 
 ---
 
