@@ -6,11 +6,10 @@ puts "Please enter a date in the following format YYYY-MM-DD."
 print ">>"
 
 date = gets.chomp
-NearEarthObjects.new(date)
-astroid_details = NearEarthObjects.find_neos_by_date(date)
-astroid_list = astroid_details.find_neos_by_date[:astroid_list]
-total_number_of_astroids = astroid_details.find_neos_by_date[:total_number_of_astroids]
-largest_astroid = astroid_details.find_neos_by_date[:biggest_astroid]
+neos = NearEarthObjects.new(date)
+astroid_list = neos.find_neos_by_date[:astroid_list]
+total_number_of_astroids = neos.find_neos_by_date[:total_number_of_astroids]
+largest_astroid = neos.find_neos_by_date[:biggest_astroid]
 
 column_labels = { name: "Name", diameter: "Diameter", miss_distance: "Missed The Earth By:" }
 column_data = column_labels.each_with_object({}) do |(col, label), hash|
