@@ -51,3 +51,4 @@ Declarative Programming:
 Red, Green, Refactor:
 - Utilize tests to keep you moving in the right direction
 - Follow the errors in the test to guide you each step of the way
+- In the end I was able to refactor the near_earth_objects.rb to follow SRP. In the hour or more I spent on it I realized I wanted to also work on getting the start.rb refactored to have its own data formatting class so it doesn't have to do it itself, but I was not able to get to it.
